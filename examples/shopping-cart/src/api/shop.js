@@ -1,6 +1,7 @@
 /**
  * Mocking client-server processing
  */
+/* eslint-disable */
 import _products from './products.json'
 
 const TIMEOUT = 100

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
 import FilterLink from '../containers/FilterLink'
@@ -32,7 +33,7 @@ const Footer = (props) => {
           className="clear-completed"
           onClick={onClearCompleted}
         >Clear completed</button>
-        
+
       }
     </footer>
   )

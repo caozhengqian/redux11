@@ -1,3 +1,4 @@
+// eslint-disable
 import { INCREMENT, ADD_CHILD, REMOVE_CHILD, CREATE_NODE, DELETE_NODE } from '../actions'
 
 const childIds = (state, action) => {
@@ -46,13 +47,14 @@ const deleteMany = (state, ids) => {
   ids.forEach(id => delete state[id])
   return state
 }
-
+// eslint-disable-next-line
 export default (state = {}, action) => {
   const { nodeId } = action
   if (typeof nodeId === 'undefined') {
     return state
   }
 
+// eslint-disable-next-line
   if (action.type === DELETE_NODE) {
     const descendantIds = getAllDescendantIds(state, nodeId)
     return deleteMany(state, [ nodeId, ...descendantIds ])

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import { ActionCreators as UndoActionCreators } from 'redux-undo'
 import { connect } from 'react-redux'

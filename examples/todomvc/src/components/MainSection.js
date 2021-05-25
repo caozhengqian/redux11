@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Footer from './Footer'
@@ -7,7 +8,7 @@ const MainSection = ({ todosCount, completedCount, actions }) =>
   (
     <section className="main">
       {
-        !!todosCount && 
+        !!todosCount &&
         <span>
           <input
             className="toggle-all"
